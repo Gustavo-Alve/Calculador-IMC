@@ -1,0 +1,142 @@
+
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: #1b1b1b;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+#container {
+    display: flex;
+    align-items: center;
+    gap: 3.5rem;
+}
+
+.picture {
+    width: 70%;
+    height: 400px;
+}
+
+.title {
+    color:#ffff;
+    position: relative;
+}
+
+.title::after{
+    position: absolute;
+    content: '';
+    background-color:green;
+    width: 8rem;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    border-radius: 10px;
+
+}
+
+#form {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem
+    ;
+}
+
+.calculator {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem;
+    color: #ffff;
+    background-color: #262626;
+    border-radius: 10px;
+}
+
+.input-box label {
+    font-size:1.1rem;
+    color: #ffff;
+    font-weight: 500;
+}
+
+.input-field {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#3f3f46;
+    padding: 0.3rem;
+    border-radius: 5px;
+    margin-top: 3px;
+}
+
+.input-field span,
+.input-field i {
+    color: #ffff;
+    font: 1.1rem;
+    padding: 0.6rem 1rem;
+
+}
+
+.input-field input::-webkit-outer-spin-button,
+.input-field input::-webkit-inner-spin-button{
+    appearance: none;
+}
+
+
+.input-field input {
+    background-color: transparent;
+    border: none;
+    width: 100%;
+    color: #ffff;
+    padding: 0;
+    font-size: 1.1rem;
+}
+
+.input-field input:focus {
+    outline: none;
+}
+
+.calcular {
+    background-color:green;
+    border: none;
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #ffff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#result {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    padding: 0.75rem 0;
+}
+
+#bmi {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-size: 2.25rem;
+}
+
+.hidden {
+    display: none;
+}
+
+.imc {
+    color:green;
+}
+
+#value {
+  color: green;
+}
+
+#description {
+    margin-top: 1.5rem;
+}
+
